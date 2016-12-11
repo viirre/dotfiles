@@ -38,30 +38,32 @@ brew 'php71', args: ['with-debug']
 brew 'mariadb'
 
 # Apps
-cask 'aerial'
 cask 'alfred'
 cask 'atom'
-cask 'caffeine'
+#cask 'caffeine'
 cask 'cheatsheet'
 cask 'dash'
 cask 'dropbox'
-cask 'evernote'
+#cask 'evernote'
 cask 'firefox'
-cask 'fluid'
+#cask 'fluid'
 cask 'google-chrome'
 cask 'google-drive'
+cask 'github-desktop'
 cask 'iterm2'
-cask 'mysqlworkbench'
+#cask 'mysqlworkbench'
 cask 'phpstorm'
-cask 'quip'
-cask 'rescuetime'
+#cask 'quip'
+#cask 'rescuetime'
 cask 'sequel-pro'
-cask 'skype'
 cask 'slack'
+cask 'sonos'
+cask 'spotify'
 cask 'sublime-text'
-cask 'textual'
-cask 'tower'
+#cask 'textual'
+#cask 'tower'
 cask 'transmit'
+cask 'unrarx'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
@@ -81,12 +83,10 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
+mas 'Airmail', id: 993160329
+mas 'BetterSnapTool', id: 417375580
+# mas 'Byword', id: 420212497 # create nice markdown files 
 mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
 mas 'Sip', id: 507257563
 mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
 mas 'Wunderlist', id: 410628904
