@@ -20,15 +20,14 @@ brew 'zsh-completions'
 # Development
 brew 'php@7.2'
 brew 'mysql'
-#brew 'node'
-#brew 'yarn'
+brew 'node'
+brew 'yarn'
 
 # Apps
 cask 'aerial'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'grammarly'
 cask 'java'
 cask 'now'
 cask 'phpstorm'
