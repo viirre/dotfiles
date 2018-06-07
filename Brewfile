@@ -3,70 +3,39 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/dupes'
-tap 'homebrew/php'
-
-# Install ZSH
-brew 'zsh'
-brew 'zsh-completions'
-
-# Install GNU core utilities (those that come with macOS are outdated)
-brew 'coreutils'
-
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'findutils'
-
-# Install Bash 4
-brew 'bash'
-
-# Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'awscli'
+brew 'bash' # Bash 4
+brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
-brew 'hub'
-brew 'tree'
+brew 'grep'
 brew 'mackup'
 brew 'mas'
-brew 'node'
 brew 'trash'
-brew 'wget'
+brew 'tree'
+brew 'zsh'
+brew 'zsh-completions'
 
 # Development
-brew 'php71', args: ['with-debug']
-brew 'mariadb'
+brew 'php@7.2'
+brew 'mysql'
+brew 'node'
+brew 'yarn'
 
 # Apps
-cask 'alfred'
-cask 'atom'
-#cask 'caffeine'
-cask 'cheatsheet'
-cask 'dash'
-cask 'dropbox'
-#cask 'evernote'
+cask 'aerial'
 cask 'firefox'
-#cask 'fluid'
+cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'google-drive'
-cask 'github-desktop'
-cask 'iterm2'
-#cask 'mysqlworkbench'
+cask 'gpgtools'
+cask 'grammarly'
+cask 'java'
+cask 'now'
 cask 'phpstorm'
-#cask 'quip'
-#cask 'rescuetime'
 cask 'sequel-pro'
 cask 'slack'
-cask 'sonos'
-cask 'spotify'
 cask 'sublime-text'
-#cask 'textual'
-#cask 'tower'
-cask 'transmit'
-cask 'unrarx'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
 cask 'vlc'
 
 # Quicklook
@@ -77,16 +46,17 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas 'Airmail', id: 993160329
-mas 'BetterSnapTool', id: 417375580
-# mas 'Byword', id: 420212497 # create nice markdown files 
+mas '1Password', id: 1333542190
 mas 'Giphy Capture', id: 668208984
 mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Wunderlist', id: 410628904
+mas 'Spark', id: 1176895641
+mas 'The Unarchiver', id: 425424353
+mas 'Tweetbot', id: 1384080005
+mas 'WhatsApp', id: 1147396723
+mas 'BetterSnapTool', id: 417375580

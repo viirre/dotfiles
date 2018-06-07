@@ -18,8 +18,9 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # GIT
-alias gs="git status"
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gst="git status"
+alias gd="git diff"
+alias gl="git log --oneline --decorate --color"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -42,15 +43,4 @@ alias hostfile="sudo nano /etc/hosts"
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
-# Vagrant / Homestead
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
-alias hsup="cd ~/Code/Homestead && vagrant up"
-alias hsssh="cd ~/Code/Homestead && vagrant ssh"
-alias homestead='function __homestead() { (cd ~/Code/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 
