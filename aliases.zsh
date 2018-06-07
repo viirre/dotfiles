@@ -3,7 +3,7 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
-alias weather="curl -4 http://wttr.in"
+alias weather="curl -4 http://wttr.in/stockholm"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
@@ -18,7 +18,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # GIT
-alias gst="git status"
+alias gs="git status"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
 
