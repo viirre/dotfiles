@@ -20,7 +20,8 @@ alias .....="cd ../../../.."
 alias gs="git status"
 alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
-alias gc="git checkout -b"
+alias gc="git checkout"
+alias gcb="git checkout -b"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
