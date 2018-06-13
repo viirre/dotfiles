@@ -22,6 +22,7 @@ alias gd="git diff"
 alias gl="git log --oneline --decorate --color"
 alias gc="git checkout"
 alias gcb="git checkout -b"
+alias gmerge="git pull --rebase origin develop"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
