@@ -29,8 +29,7 @@ If you did all of the above you may now follow these install instructions to set
 7. Append `/usr/local/bin/zsh` to the end of your `/etc/shells` file
 8. Run `install.sh` to start the installation
 9. Restore preferences by running `mackup restore`
-10. Install the "spaceship" theme from instructions at https://github.com/denysdovhan/spaceship-prompt
-11. Restart your computer to finalize the process
+10. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
