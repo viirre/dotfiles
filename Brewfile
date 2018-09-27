@@ -19,12 +19,11 @@ brew 'zsh-completions'
 
 # Development
 brew 'php@7.2'
-brew 'mysql'
+brew 'mysql@5.7'
 brew 'node'
 brew 'yarn'
 
 # Apps
-cask 'aerial'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
