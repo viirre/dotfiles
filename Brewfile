@@ -26,6 +26,7 @@ brew 'node'
 brew 'yarn'
 
 # Apps
+cask 'clipy'
 cask 'dropbox'
 cask 'firefox'
 cask 'google-backup-and-sync'
