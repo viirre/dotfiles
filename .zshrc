@@ -77,6 +77,9 @@ fi
 # Add composer to path
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
+# Global gitignore
+git config --global core.excludesfile ~/.dotfiles/.gitignore_global
+
 ##########################################################
 #
 #                     SPACESHIP
