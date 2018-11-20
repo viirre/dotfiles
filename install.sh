@@ -7,6 +7,12 @@ if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Install Spaceship theme
+wget https://raw.githubusercontent.com/denysdovhan/spaceship-prompt/master/spaceship.zsh-theme -O ~/.oh-my-zsh/themes/spaceship.zsh-theme
+
 # Update Homebrew recipes
 brew update
 
@@ -45,10 +51,6 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
-
-# Install Spaceship theme
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

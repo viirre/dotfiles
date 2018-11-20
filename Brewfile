@@ -16,8 +16,8 @@ brew 'mackup'
 brew 'mas'
 brew 'trash'
 brew 'tree'
-brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 
 # Development
 brew 'php@7.2'
@@ -26,6 +26,7 @@ brew 'node'
 brew 'yarn'
 
 # Apps
+cask 'iterm2'
 cask 'clipy'
 cask 'dropbox'
 cask 'firefox'
