@@ -169,7 +169,10 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
+
+# Size of dock icons
+defaults write com.apple.dock tilesize -int 48; killall Dock
 
 # Add iOS & Watch Simulator to Launchpad
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
@@ -304,6 +307,4 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Terminal" "Tweetbot" "iCal"; do
     killall "${app}" &> /dev/null
 done
-
-echo "Done. Note that some of these changes require a logout/restart to take effect."
 

@@ -10,8 +10,8 @@ fi
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install Spaceship theme
-wget https://raw.githubusercontent.com/denysdovhan/spaceship-prompt/master/spaceship.zsh-theme -O ~/.oh-my-zsh/themes/spaceship.zsh-theme
+# Install Dracula theme
+curl https://raw.githubusercontent.com/dracula/zsh/22058079469b74af07f1f4984df505f9b5156c1f/dracula.zsh-theme --output ~/.oh-my-zsh/themes/dracula.zsh-theme
 
 # Update Homebrew recipes
 brew update
@@ -47,11 +47,14 @@ mkdir $HOME/Sites
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $DOTFILES/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
+
+# Done!
+echo "Done! Note that some of these changes require a logout/restart to take effect."

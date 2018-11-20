@@ -50,4 +50,4 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 
 # Greps
 alias gr="a route:list | grep"
-alias ga="cat ~/.dotfiles/aliases.zsh | grep"
+alias ga="cat $DOTFILES/aliases.zsh | grep"
