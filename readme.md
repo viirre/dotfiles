@@ -39,3 +39,8 @@ If you did all of the above you may now follow these install instructions to set
 Your Mac is now ready to use!
 
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
+
+If your icons for apps are missing, run:
+`sudo find /private/var/folders/ -name com.apple.iconservices -exec rm -rf {} \;
+sudo rm -rf /Library/Caches/com.apple.iconservices.store
+killall Dock`
