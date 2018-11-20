@@ -46,10 +46,6 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
-# Install Spaceship theme
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos

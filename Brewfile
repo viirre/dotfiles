@@ -28,6 +28,7 @@ brew 'yarn'
 # Apps
 cask 'clipy'
 cask 'dropbox'
+cask 'github'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -46,11 +47,11 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 
-# Fonts
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+# Fonts (timed out last install)
+#cask 'font-source-code-pro-for-powerline'
+#cask 'font-source-code-pro'
+#cask 'font-source-sans-pro'
+#cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas '1Password', id: 1333542190
