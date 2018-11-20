@@ -29,6 +29,7 @@ brew 'yarn'
 cask 'iterm2'
 cask 'clipy'
 cask 'dropbox'
+cask 'github'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -47,11 +48,11 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 
-# Fonts
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+# Fonts (timed out last install)
+#cask 'font-source-code-pro-for-powerline'
+#cask 'font-source-code-pro'
+#cask 'font-source-sans-pro'
+#cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas '1Password', id: 1333542190
@@ -59,4 +60,5 @@ mas 'The Unarchiver', id: 425424353
 mas 'BetterSnapTool', id: 417375580
 mas 'The Unarchiver', id: 425424353
 mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'Harvest', id: 506189836
 mas 'Tweetbot', id: 1384080005
