@@ -52,6 +52,9 @@ ln -s $DOTFILES/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
+# Set git to use ssh (not http) by default
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos

@@ -27,6 +27,7 @@ brew 'yarn'
 
 # Apps
 cask 'iterm2'
+cask 'imageoptim'
 cask 'clipy'
 cask 'dropbox'
 cask 'github'
@@ -40,6 +41,7 @@ cask 'sequel-pro'
 cask 'slack'
 cask 'sublime-text'
 cask 'vlc'
+cask 'zeplin'
 
 # Quicklook
 cask 'qlcolorcode'
