@@ -44,6 +44,9 @@ alias ci="composer install"
 alias cdu="composer dump"
 alias cda="composer dump-autoload -o"
 alias hostfile="sudo nano /etc/hosts"
+alias php70="phpv php@7.0"
+alias php71="phpv php@7.1"
+alias php72="phpv php"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

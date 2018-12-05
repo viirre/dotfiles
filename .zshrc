@@ -82,3 +82,6 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # Global gitignore
 git config --global core.excludesfile $DOTFILES/.gitignore_global
+
+# Include custom functions
+source $DOTFILES/functions.sh
