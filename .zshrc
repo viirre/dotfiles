@@ -85,3 +85,8 @@ git config --global core.excludesfile $DOTFILES/.gitignore_global
 
 # Include custom functions
 source $DOTFILES/functions.sh
+
+# Include custom includes (non dotfiles)
+if [ -f ~/.includes ]; then
+    source ~/.includes
+fi
