@@ -24,6 +24,9 @@ alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gmerge="git pull --rebase origin develop"
 
+# SSH
+ownit='ssh -4t deploy@login01.ownit.se ssh $1'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
