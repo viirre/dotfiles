@@ -20,7 +20,7 @@ brew 'zsh-completions'
 brew 'zsh-syntax-highlighting'
 
 # Development
-brew 'php@7.2'
+brew 'php@7.3'
 brew 'mysql@5.7'
 brew 'node'
 brew 'yarn'
@@ -59,7 +59,6 @@ cask 'qlstephen'
 #cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 1333542190
 mas 'The Unarchiver', id: 425424353
 mas 'BetterSnapTool', id: 417375580
 mas 'The Unarchiver', id: 425424353

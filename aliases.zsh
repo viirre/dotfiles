@@ -9,6 +9,7 @@ alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias ll="ls -lahF"
+alias hostfile="sudo nano /etc/hosts"
 
 # Easier navigation
 alias ..="cd .."
@@ -19,10 +20,11 @@ alias .....="cd ../../../.."
 # GIT
 alias gs="git status"
 alias gd="git diff"
-alias gl="git log --oneline --decorate --color"
+alias gl="git log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\""
 alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gmerge="git pull --rebase origin develop"
+alias nah="git reset --hard; git clean -df;"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -43,10 +45,6 @@ alias cr="composer require"
 alias ci="composer install"
 alias cdu="composer dump"
 alias cda="composer dump-autoload -o"
-alias hostfile="sudo nano /etc/hosts"
-alias php70="phpv php@7.0"
-alias php71="phpv php@7.1"
-alias php72="phpv php"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"

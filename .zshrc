@@ -83,10 +83,11 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 # Global gitignore
 git config --global core.excludesfile $DOTFILES/.gitignore_global
 
-# Include custom functions
-source $DOTFILES/functions.sh
 
 # Include custom includes (non dotfiles)
 if [ -f ~/.includes ]; then
     source ~/.includes
 fi
+
+export NVM_DIR="/Users/victor/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
