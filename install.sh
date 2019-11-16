@@ -1,4 +1,5 @@
 #!/bin/sh
+export DOTFILES=$HOME/dotfiles
 
 echo "Setting up your Mac..."
 

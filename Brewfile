@@ -1,7 +1,7 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask-cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Install Binaries
@@ -14,6 +14,7 @@ brew 'git'
 brew 'grep'
 brew 'mackup'
 brew 'mas'
+brew 'pkg-config'
 brew 'trash'
 brew 'tree'
 brew 'zsh-completions'
@@ -64,4 +65,3 @@ mas 'BetterSnapTool', id: 417375580
 mas 'The Unarchiver', id: 425424353
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Harvest', id: 506189836
-mas 'Tweetbot', id: 1384080005
