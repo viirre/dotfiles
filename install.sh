@@ -1,4 +1,6 @@
 #!/bin/sh
+
+# Location of the dotfiles
 export DOTFILES=$HOME/dotfiles
 
 echo "Setting up your Mac..."
@@ -23,6 +25,9 @@ brew bundle
 
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
+
+# Install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
 # Install PHP extensions with PECL
 pecl install xdebug

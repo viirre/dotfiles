@@ -13,8 +13,9 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'grep'
 brew 'mackup'
+brew 'imagemagick'
 brew 'mas'
-brew 'pkg-config'
+brew 'pkg-config' # Needed for imagemagick
 brew 'trash'
 brew 'tree'
 brew 'zsh-completions'
@@ -51,7 +52,6 @@ cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'qlstephen'
 
 # Fonts (timed out last install)
 #cask 'font-source-code-pro-for-powerline'
