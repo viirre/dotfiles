@@ -74,7 +74,7 @@ phpv() {
 alias php70="phpv php@7.0"
 alias php71="phpv php@7.1"
 alias php72="phpv php@7.2"
-alias php73="phpv php@7.3
+alias php73="phpv php@7.3"
 alias php74="phpv php"
 
 
