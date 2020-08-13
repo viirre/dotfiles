@@ -65,3 +65,4 @@ mas 'BetterSnapTool', id: 417375580
 mas 'The Unarchiver', id: 425424353
 mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Harvest', id: 506189836
+mas 'Sequel Ace', id:  1518036000

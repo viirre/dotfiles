@@ -91,3 +91,5 @@ fi
 
 export NVM_DIR="/Users/victor/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
