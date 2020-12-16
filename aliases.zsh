@@ -19,8 +19,8 @@ alias .....="cd ../../../.."
 
 # GIT
 alias gs="git status"
-alias gpull="git pull"
-alias gpush="git push"
+alias pull="git pull"
+alias push="git push"
 alias gd="git diff"
 alias gl="git log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\""
 alias gc="git checkout"
@@ -36,6 +36,7 @@ alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{
 alias a="php artisan"
 alias pa="php artisan"
 alias art="php artisan"
+alias ashop="php ashop"
 alias phpspec="vendor/bin/phpspec run"
 alias phpunit="vendor/bin/phpunit"
 alias pu="vendor/bin/phpunit"
