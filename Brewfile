@@ -22,8 +22,7 @@ brew 'zsh-completions'
 brew 'zsh-syntax-highlighting'
 
 # Development
-brew 'php@7.3'
-brew 'mysql@5.7'
+brew 'php@7.4'
 brew 'node'
 brew 'yarn'
 
@@ -34,7 +33,6 @@ cask 'clipy'
 cask 'dropbox'
 cask 'github'
 cask 'firefox'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'insomnia'
 cask 'java'
@@ -63,6 +61,5 @@ cask 'quicklook-csv'
 mas 'The Unarchiver', id: 425424353
 mas 'BetterSnapTool', id: 417375580
 mas 'The Unarchiver', id: 425424353
-mas 'Microsoft Remote Desktop', id: 1295203466
 mas 'Harvest', id: 506189836
 mas 'Sequel Ace', id:  1518036000
