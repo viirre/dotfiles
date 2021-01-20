@@ -89,7 +89,18 @@ if [ -f ~/.includes ]; then
     source ~/.includes
 fi
 
+# Fix for running commands on M1
+x86() {
+  arch -x86_64 $@
+}
+
 export NVM_DIR="/Users/victor/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit && compinit

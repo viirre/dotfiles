@@ -1,3 +1,4 @@
+
 # CLI Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
@@ -12,6 +13,7 @@ alias ll="ls -lahF"
 alias hostfile="sudo nano /etc/hosts"
 
 # Easier navigation
+alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -60,6 +62,7 @@ alias ga="cat $DOTFILES/aliases.zsh | grep"
 
 # Other
 alias md5sum='md5 -r'
+alias brew2="arch -x86_64 brew"
 
 # Functions
 phpv() {

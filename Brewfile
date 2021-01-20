@@ -42,6 +42,7 @@ cask 'sequel-pro'
 cask 'slack'
 cask 'spotify'
 cask 'sublime-text'
+cask 'transmit'
 cask 'vlc'
 cask 'zeplin'
 
