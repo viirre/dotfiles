@@ -100,6 +100,7 @@ export NVM_DIR="/Users/victor/.nvm"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 
 # Load Git completion
+# You need to put git compeltion scripts in ~/.zsh. See https://oliverspryn.medium.com/adding-git-completion-to-zsh-60f3b0e7ffbc
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 
