@@ -1,4 +1,3 @@
-
 # CLI Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
@@ -29,6 +28,8 @@ alias gc="git checkout"
 alias gcb="git checkout -b"
 alias gmerge="git pull --rebase origin develop"
 alias nah="git reset --hard; git clean -df;"
+alias commit="git add . && git commit -m"
+alias wip="commit wip"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -62,24 +63,6 @@ alias ga="cat $DOTFILES/aliases.zsh | grep"
 
 # Other
 alias md5sum='md5 -r'
-alias brew2="arch -x86_64 brew"
-
-# Functions
-phpv() {
-    valet stop
-    brew unlink php@7.0 php@7.1 php@7.2 php@7.3
-    brew link --force --overwrite $1
-    brew services start $1
-    composer global update
-	rm -f ~/.config/valet/valet.sock
-    valet install
-}
-
-alias php70="phpv php@7.0"
-alias php71="phpv php@7.1"
-alias php72="phpv php@7.2"
-alias php73="phpv php@7.3"
-alias php74="phpv php"
 
 # Open database application from project
 function opendb () {
