@@ -1,4 +1,3 @@
-
 # CLI Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
@@ -71,7 +70,7 @@ phpv() {
     brew link --force --overwrite $1
     brew services start $1
     composer global update
-	rm -f ~/.config/valet/valet.sock
+    rm -f ~/.config/valet/valet.sock
     valet install
 }
 

@@ -23,6 +23,8 @@
 # Logs and databases #
 ######################
 *.log
+*.sql
+*.sqlite
 
 # OS generated files #
 ######################
@@ -34,9 +36,5 @@
 ehthumbs.db
 Thumbs.db
 .idea/
+.vscode
 .vagrant/
-
-# Custom #
-#####################
-.working_on
-.phpunit.result.cache
