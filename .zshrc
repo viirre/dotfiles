@@ -107,5 +107,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Global gitignore
+# Git configs
 git config --global core.excludesfile $DOTFILES/.gitignore_global
+git config --global push.default current # Set auto create current branch on push
+
+# Enable syntax highlighting (must be at the end of this file)
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
