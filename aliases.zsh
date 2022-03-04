@@ -52,6 +52,7 @@ alias ci="composer install"
 alias cdu="composer dump"
 alias cda="composer dump-autoload -o"
 alias vi="rm ~/.config/valet/valet.sock && valet install"
+alias amfs="php artisan migrate:fresh --seed"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -63,14 +64,20 @@ alias ga="cat $DOTFILES/aliases.zsh | grep"
 
 # Other
 alias md5sum='md5 -r'
+alias ownit="ssh -4t deploy@login01.ownit.se ssh"
+
+# Git clone repo
+function gitclone () {
+   git clone git@github.com:adaptivemedia/$1
+}
 
 # Open database application from project
 function opendb () {
    [ ! -f .env ] && { echo "No .env file found."; exit 1; }
 
-   DB_CONNECTION=$(grep DB_CONNECTION .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
-   DB_HOST=$(grep DB_HOST .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
-   DB_PORT=$(grep DB_PORT .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
+   DB_CONNECTION="mysql"
+   DB_HOST="127.0.0.1"
+   DB_PORT="3306"
    DB_DATABASE=$(grep DB_DATABASE .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
    DB_USERNAME=$(grep DB_USERNAME .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
    DB_PASSWORD=$(grep DB_PASSWORD .env | grep -v -e '^\s*#' | cut -d '=' -f 2-)
@@ -78,5 +85,10 @@ function opendb () {
    DB_URL="${DB_CONNECTION}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}"
 
    echo "Opening ${DB_URL}"
-   open -a "sequel ace" $DB_URL
+   open $DB_URL
+}
+
+# Quickly ssh into a Forge server
+forge () {
+    ssh forge@$1
 }
