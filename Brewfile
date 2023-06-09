@@ -7,6 +7,7 @@ tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
 brew 'awscli'
+brew 'bat'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'ffmpeg'
@@ -15,6 +16,7 @@ brew 'git'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
+brew 's3cmd'
 brew 'zsh-syntax-highlighting'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
@@ -34,6 +36,7 @@ brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
 brew 'meilisearch'
+brew 'ripgrep'
 brew 'mysql'
 brew 'nginx'
 brew 'node'

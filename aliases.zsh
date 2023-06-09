@@ -36,7 +36,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # PHP
-alias a="php artisan"
+#alias a="php artisan" # Use function below instead
 alias pa="php artisan"
 alias art="php artisan"
 alias ashop="php ashop"
@@ -45,14 +45,14 @@ alias phpunit="vendor/bin/phpunit"
 alias pu="vendor/bin/phpunit"
 alias puf="phpunit --filter"
 alias pus="pu --stop-on-failure"
-alias c="composer"
+alias c="/opt/homebrew/bin/composer"
 alias cu="composer update"
 alias cr="composer require"
 alias ci="composer install"
 alias cdu="composer dump"
 alias cda="composer dump-autoload -o"
 alias vi="rm ~/.config/valet/valet.sock && valet install"
-alias amfs="php artisan migrate:fresh --seed"
+alias amfs="a migrate:fresh --seed"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -61,14 +61,21 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Greps
 alias gr="a route:list | grep"
 alias ga="cat $DOTFILES/aliases.zsh | grep"
+alias rgs="rg -F --"
 
 # Other
 alias md5sum='md5 -r'
 alias ownit="ssh -4t deploy@login01.ownit.se ssh"
+alias cat="bat"
 
 # Git clone repo
 function gitclone () {
    git clone git@github.com:adaptivemedia/$1
+}
+
+# Git rebase interactive
+function rebase () {
+  git rebase -i HEAD~$1
 }
 
 # Open database application from project
@@ -91,4 +98,14 @@ function opendb () {
 # Quickly ssh into a Forge server
 forge () {
     ssh forge@$1
+}
+
+# Ashop and artisan helper
+a () {
+   if [ -f "ashop" ]
+   then
+      php ashop "$@"
+   else
+      php artisan "$@"
+   fi
 }
