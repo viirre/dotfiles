@@ -29,14 +29,11 @@ brew bundle --file $DOTFILES/Brewfile
 # Install PHP extensions with PECL
 pecl install imagick redis swoole
 
-# Install global Composer packages (For M1 homebrew!)
-/opt/homebrew/bin/composer global require laravel/installer laravel/valet beyondcode/expose
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
+# Install global Composer packages
+/opt/homebrew/bin/composer global require laravel/installer
 
 # Create a Code directory
 mkdir $HOME/Code
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source $DOTFILES/.macos
+#source $DOTFILES/.macos
