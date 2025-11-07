@@ -43,3 +43,4 @@ Thumbs.db
 #####################
 .working_on
 .phpunit.result.cache
+.claude/**/*.local.json

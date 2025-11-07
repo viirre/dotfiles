@@ -20,6 +20,7 @@ alias .....="cd ../../../.."
 
 # GIT
 alias gs="git status"
+alias gst="git status"
 alias pull="git pull"
 alias push="git push"
 alias gd="git diff"
@@ -29,6 +30,7 @@ alias gcb="git checkout -b"
 alias gmerge="git pull --rebase origin develop"
 alias nah="git reset --hard; git clean -df;"
 alias commit="git add . && git commit -m"
+alias uncommit="git reset --soft HEAD~1"
 alias wip="commit wip"
 
 # IP addresses
@@ -39,7 +41,6 @@ alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{
 #alias a="php artisan" # Use function below instead
 alias pa="php artisan"
 alias art="php artisan"
-alias ashop="php ashop"
 alias phpspec="vendor/bin/phpspec run"
 alias phpunit="vendor/bin/phpunit"
 alias pu="vendor/bin/phpunit"
