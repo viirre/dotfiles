@@ -23,17 +23,10 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
-# Install PHP extensions with PECL
-pecl install imagick redis swoole
-
-# Install global Composer packages
-/opt/homebrew/bin/composer global require laravel/installer
-
 # Create a Code directory
-mkdir $HOME/Code
+#mkdir $HOME/Code
 
 # Set macOS preferences - we will run this last because this will reload the shell
-#source $DOTFILES/.macos
+source $DOTFILES/.macos

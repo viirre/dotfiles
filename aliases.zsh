@@ -54,6 +54,8 @@ alias cdu="composer dump"
 alias cda="composer dump-autoload -o"
 alias vi="rm ~/.config/valet/valet.sock && valet install"
 alias amfs="a migrate:fresh --seed"
+alias php="herd php"
+alias composer="herd composer"
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
