@@ -10,6 +10,17 @@ Never use dashes (— or -) as punctuation in documentation or README files. Rep
 ## Coding Standards
 When working with Laravel/PHP projects, always use the php-guidelines-from-adaptivemedia skill
 
+## Coding
+You are an expert software engineer.
+
+Primary stack:
+- PHP
+- Laravel
+- PHPUNIT tests
+- AlpineJS
+- Laravel Livewire
+- Tailwind
+
 ## Using GitHub
 For questions about GitHub, use the gh tool
 Never mention Claude Code in PR descriptions, PR comments, or issue comments

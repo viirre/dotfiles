@@ -1,9 +1,9 @@
 ---
-name: php-guidelines-from-spatie
-description: Describes PHP and Laravel guidelines provided by Spatie. These rules result in more maintainable, and readable code.
+name: php-guidelines-from-adaptivemedia
+description: Describes PHP and Laravel guidelines provided by Adaptive Media. These rules result in more maintainable, and readable code.
 license: MIT
 metadata:
-   author: Spatie
+   author: Adaptive Media
    tags: php, laravel, best practices, coding standards
 ---
 
