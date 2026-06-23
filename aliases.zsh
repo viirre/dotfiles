@@ -70,6 +70,7 @@ alias rgs="rg -F --"
 alias md5sum='md5 -r'
 alias ownit="ssh -4t deploy@login01.ownit.se ssh"
 alias cat="bat"
+alias claudeauto="claude --dangerously-skip-permissions"
 
 # Git clone repo
 function gitclone () {

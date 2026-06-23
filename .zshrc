@@ -152,3 +152,12 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/victor/Library/Application Support/Herd/
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/victor/Library/Application Support/Herd/config/php/83/"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/Flutter/flutter/bin:$PATH"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/Users/victor/.gem/ruby/3.4.0/bin:$PATH"
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/victor/Library/Application Support/Herd/config/php/85/"
