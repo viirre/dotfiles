@@ -11,10 +11,17 @@
 # https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent
 eval "$(ssh-agent -s)"
 
-touch ~/.ssh/config
-echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/id_rsa" | tee ~/.ssh/config
+# printf, not echo: /bin/sh echo writes the \n escapes literally, producing an invalid ssh config
+mkdir -p ~/.ssh
+printf '%s\n' \
+  'Host *' \
+  '  AddKeysToAgent yes' \
+  '  UseKeychain yes' \
+  '  IdentityFile ~/.ssh/id_rsa' \
+  > ~/.ssh/config
 
-ssh-add -K ~/.ssh/id_rsa
+# --apple-use-keychain replaced the deprecated -K flag (macOS 12+)
+ssh-add --apple-use-keychain ~/.ssh/id_rsa
 
 # Adding your SSH key to your GitHub account
 # https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account

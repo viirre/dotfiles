@@ -112,7 +112,9 @@ git config --global core.excludesfile $DOTFILES/.gitignore_global
 git config --global push.default current # Set auto create current branch on push
 
 # Enable syntax highlighting (must be at the end of this file)
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Guarded so a fresh shell works before brew bundle has installed it
+[ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
+  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
