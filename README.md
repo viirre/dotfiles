@@ -48,7 +48,27 @@ If you did all of the above you may now follow these install instructions to set
     ```zsh
     ~/.dotfiles/fresh.sh
     ```
-8. Restart your computer to finalize the process
+8. Clone the shared ai-tools repo and install the team skills and agents (after `fresh.sh`, which wires the AI config first):
+
+    ```zsh
+    git clone git@github.com:adaptivemedia/ai-tools.git && ai-tools/install.sh
+    ```
+
+9. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
+
+## AI agent config
+
+The `ai/` directory holds the config shared by all AI coding agents (Claude Code, Codex, and others):
+
+| Path | Purpose |
+|------|---------|
+| `ai/AGENTS.md` | Canonical, tool-agnostic instructions. Linked to `~/.agents/AGENTS.md`, which `~/.codex/AGENTS.md` points at. |
+| `ai/CLAUDE.md` | Claude Code specific instructions. Imports `AGENTS.md` and adds Claude-only rules. Linked to `~/.claude/CLAUDE.md`. |
+| `ai/claude/` | Claude Code settings, statusline, keybindings, and output styles. |
+| `ai/skills/` | Personal skills, linked into `~/.claude/skills`. |
+| `ai/install.sh` | Creates all the symlinks. Idempotent, never overwrites real files. |
+
+`ai/install.sh` runs as part of `fresh.sh`. It also points `~/.agents/skills` at `~/.claude/skills` so skills live in one place and every agent sees the same set. Run it before installing the shared [ai-tools](https://github.com/adaptivemedia/ai-tools) repo, whose install script links the team skills and agents into both directories and respects the symlinks this script creates.
 
