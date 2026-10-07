@@ -1,5 +1,4 @@
 {
-  "outputStyle": "Attention-kind",
   "permissions": {
     "allow": [
       "Skill(ray-skill:*)",
@@ -88,7 +87,8 @@
     "playwright@claude-plugins-official": true,
     "skill-security-auditor@claude-code-skills": true,
     "slack@claude-plugins-official": true,
-    "ui-ux-pro-max@ui-ux-pro-max-skill": true
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "ui-ux-pro-max-skill": {
@@ -98,11 +98,17 @@
       }
     }
   },
+  "outputStyle": "Attention-kind",
   "alwaysThinkingEnabled": true,
   "effortLevel": "high",
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
+  },
   "skipAutoPermissionPrompt": true,
-  "model": "claude-fable-5[1m]"
+  "switchModelsOnFlag": true
 }
