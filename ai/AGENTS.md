@@ -38,6 +38,8 @@ Never use dashes (— or -) as punctuation in documentation or README files. Rep
 
 ## Coding Standards
 When writing or modifying Laravel/PHP code, always follow the laravel-coder skill. Reviews apply code-review-rules.md (via the laravel-code-reviewer / laravel-pr-reviewer agents where the tool supports agents). All three are sourced from the shared ai-tools repo, symlinked into ~/.claude and ~/.agents, so the team shares one set of guidelines.
+Keep code comments in code files short and concise. Use docblocks for longer explanations (but only when necessary), especially for public methods and classes.
+Dont co-commit as an agent, only use my Github handle "viirre" and don't add "Co-authored by" lines to commits or PR descriptions.
 
 ## Coding
 You are an expert software engineer with web development focus.
@@ -52,7 +54,7 @@ Primary stack:
 
 ## Tests
 Always write tests for new code and find existing test and update them for existing code. If tests are missing, create them.
-When you have changed code that can be verified visually, try to use browser tools to verify that it looks correct and has not broken anything.
+When you have changed code that can be verified visually, verify with browser tools that it looks correct and has not broken anything.
 
 ## Using GitHub
 - For questions about GitHub, use the gh CLI
@@ -60,10 +62,13 @@ When you have changed code that can be verified visually, try to use browser too
 - Do not include a "Test plan" section in PR descriptions
 - Write PR titles in english, body in Swedish
 - When you have a Flare-error with a URL or a Favro-ticket with a URL, include it in the PR body
+- Don't commit code unless I have told you to commit the code. If you are unsure, ask me first.
 
 ## Browser tools
 - Use `agent-browser` for anything requiring an existing session, local dev sites, or authenticated pages
+- If `agent-browser` Chrome crashes in macOS HIServices at `TransformProcessType`, request sandbox escalation before retrying. Do not use `--no-sandbox` as a workaround.
 - Use `playwright` for clean screenshots, public URLs, and automated test flows
 - Prefer using the agent-browser skill over using playwright directly.
+- Prefer using the agent-browser skill over using the browser functionality bundled with Claude Code or Codex apps. 
 
 Put screenshots taken by these tools in the projects `.agent-screenshots` which is globally git-ignored
